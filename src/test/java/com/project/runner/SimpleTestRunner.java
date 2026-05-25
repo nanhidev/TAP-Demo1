@@ -17,6 +17,11 @@ package com.project.runner;
             runCucumberFeature("src/test/resources/com/TAP-Demo1/features/ManageRolesInUserManagement.feature");
         }
     
+    @Test(priority = 1)
+        public void runDashboardnavigationandexport() {
+            runCucumberFeature("src/test/resources/com/TAP-Demo1/features/DashboardNavigationAndExport.feature");
+        }
+    
             
     private void runCucumberFeature(String featurePath) {
             String featureName = new File(featurePath).getName().replace(".feature", "");
