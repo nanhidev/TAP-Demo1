@@ -18,6 +18,16 @@ package com.project.runner;
         }
     
     @Test(priority = 1)
+        public void runLoginscreenforrecruiters() {
+            runCucumberFeature("src/test/resources/com/TAP-Demo1/features/LoginScreenForRecruiters.feature");
+        }
+    
+    @Test(priority = 2)
+        public void runSheet1() {
+            runCucumberFeature("src/test/resources/com/TAP-Demo1/features/Sheet1.feature");
+        }
+    
+    @Test(priority = 3)
         public void runDashboardnavigationandexport() {
             runCucumberFeature("src/test/resources/com/TAP-Demo1/features/DashboardNavigationAndExport.feature");
         }
